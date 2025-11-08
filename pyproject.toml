@@ -1,0 +1,28 @@
+[build-system]
+# setuptools will build the package; numpy is needed during build
+requires = ["setuptools>=61.0", "wheel", "numpy"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ligotools"
+version = "0.1.0"
+description = "Tools for working with LIGO tutorial data"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name = "Ligo Scientific Collaboration (LSC)" },
+  { name = "Omair Gill" }
+]
+license = { text = "BSD-3-Clause" }
+
+# match the runtime dependencies from environment.yml
+dependencies = [
+  "numpy>=2.0",
+  "scipy>=1.13",
+  "h5py>=3.12",
+  "matplotlib>=3.9"
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/hw3-omair-gill"
+Source = "https://github.com/yourusername/hw3-omair-gill"
